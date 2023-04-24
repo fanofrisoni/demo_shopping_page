@@ -16,10 +16,10 @@ header {
 h1 {
   padding-top: 30vh;
   padding-left: 1.2vw;
-  font-size: 10rem;
+  font-size: 12rem;
   color: #1d1d1f;
   text-align: center;
-  text-shadow: 35rem 0 0#ce4b2a,-35rem 0 0#ce4b2a;
+  text-shadow: 40rem 0 0#ce4b2a,-40rem 0 0#ce4b2a;
 }
 
 .navbar {
@@ -63,4 +63,13 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width:400px) {
+  h1 {
+    font-size: 6rem;
+    padding-top: 40vh;
+    text-shadow: 0 6rem 0#ce4b2a12,0 -6rem 0#ce4b2a12, 0 12rem 0#ce4b2a12,0 -12rem 0#ce4b2a12, 0 18rem 0#ce4b2a12,0 -18rem 0#ce4b2a12, 0 24rem 0#ce4b2a12,0 -24rem 0#ce4b2a12;
+  }
 }
