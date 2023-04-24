@@ -67,6 +67,27 @@ h2 {
   text-align: center;
 }
 
+
+
+@keyframes arrow {
+  0% {
+    transform: scale(0.1);
+    top: 33vh;
+  }
+  100% {
+    transform: scale(0.19);
+    top: 55vh;
+  }
+}
+#arrow-header {
+  position: absolute;
+  transform-origin: center;
+  top: 35vh;
+  left: -16vw;
+  transform: scale(0.1);
+  animation: arrow 1.2s infinite ease-in-out;
+}
+
 @media only screen and (max-width:400px) {
   h1 {
     font-size: 6rem;
@@ -83,3 +104,4 @@ h2 {
     padding: 4vh 0;
   }
 }
+
