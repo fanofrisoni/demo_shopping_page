@@ -72,20 +72,19 @@ h2 {
 @keyframes arrow {
   0% {
     transform: scale(0.1);
-    top: 33vh;
+    top: 31vh;
+    opacity: 0%;
   }
   100% {
-    transform: scale(0.19);
-    top: 55vh;
+    transform: scale(0.21);
+    top: 56vh;
+    opacity: 100%;
   }
 }
 #arrow-header {
   position: absolute;
-  transform-origin: center;
-  top: 35vh;
-  left: -16vw;
-  transform: scale(0.1);
-  animation: arrow 1.2s infinite ease-in-out;
+  content: none;
+  opacity: 0;
 }
 
 @media only screen and (max-width:400px) {
@@ -102,6 +101,15 @@ h2 {
   }
   .navbar {
     padding: 4vh 0;
+  }
+  #arrow-header {
+    position: absolute;
+    transform-origin: center;
+    top: 35vh;
+    left: -16vw;
+    transform: scale(0.1);
+    animation: arrow 1.2s infinite ease-in-out;
+    opacity: 100;
   }
 }
 
