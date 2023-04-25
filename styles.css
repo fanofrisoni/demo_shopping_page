@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: #f5f5f7;
   overflow-x: hidden;
@@ -78,7 +81,32 @@ h1 {
   background-color: #ce4b2a;
   color: #f5f5f7;
 }
+.design-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+ 
+  height: 45vh;
+  max-width: 90vw;
+  width: 100%;
+  transform-origin: center;
+  background-color: white;
+}
+.design-slider > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  border: solid 2px #ce4b2a;
+}
 
+h3 {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 
 @keyframes arrow {
   0% {
