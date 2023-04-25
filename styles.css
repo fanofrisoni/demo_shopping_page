@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
 }
 html {
   overflow-x: hidden;
@@ -14,7 +15,7 @@ body {
 header {
   display: block;
   position: static;
-  width: 100vw;
+  width: 100vw - 15px;
   height: 100vh;
 }
 h1 {
@@ -29,7 +30,7 @@ h1 {
 .navbar {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100vw - 15px;
   background-color: #f5f5f7;
   padding: 3vh;
   
@@ -60,7 +61,7 @@ h1 {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100vw - 15px;
   height: 100vh;
   flex-direction: column;
   background-color: #1d1d1f;
@@ -76,14 +77,14 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100vw - 15px;
   height: 100vh;
   background-color: #ce4b2a;
   color: #f5f5f7;
 }
 .design-slider {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
  
@@ -96,6 +97,7 @@ h1 {
 .design-slider > img {
   width: 100%;
   height: 100%;
+  max-width: 22.5vw;
   object-fit: contain;
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -151,6 +153,12 @@ h3 {
     transform: scale(0.1);
     animation: arrow 1.2s infinite ease-in-out;
     opacity: 100;
+  }
+  .design-slider {
+    overflow-x: scroll;
+  }
+  .design-slider > img {
+    max-width: 100vw;
   }
 }
 
