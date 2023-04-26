@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <title>hunet.</title>
 </head>
 <body>
   
   <header>
     <h1>hunet.</h1>
-    <img id="arrow-header" src="/img/down-arrow.png" alt="arrow">
+    <div id="arrow-header"></div>
   </header>
   <main>
     <nav class="navbar" id="nav">
       <ul class="navbar-items">
+        <li class="logo">hunet.</li>
         <li><a href="#nav">about</a></li>
         <li><a href="#nav">wearables</a></li>
         <li><a href="#nav">contact</a></li>
@@ -27,10 +29,22 @@
     <section id="cards" class="cards">
       <h3>designs.</h3>
       <div class="design-slider">
-        <img src="img/eyewear1.jpg" alt="eyewear1">
-        <img src="img/eyewear5.jpg" alt="eyewear2">
-        <img src="img/eyewear3.jpg" alt="eyewear3">
-        <img src="img/eyewear4.jpg" alt="eyewear4">
+        <div class="imgdiv">
+          <img src="img/eyewear1.jpg" alt="eyewear1">
+          <h5 class="imglabel">hunet.spiro</h5>
+        </div>
+        <div class="imgdiv">
+          <img src="img/eyewear5.jpg" alt="eyewear2">
+          <h5 class="imglabel">hunet.lavie</h5>
+        </div>
+        <div class="imgdiv">
+          <img src="img/eyewear3.jpg" alt="eyewear3">
+          <h5 class="imglabel">hunet.klark</h5>
+        </div>
+        <div class="imgdiv">
+          <img src="img/eyewear4.jpg" alt="eyewear4">
+          <h5 class="imglabel">hunet.yujen</h5>
+        </div>
       </div>
     </section>
   </main>
