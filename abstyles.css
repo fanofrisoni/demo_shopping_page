@@ -1,0 +1,44 @@
+* {
+  overflow: hidden;
+}
+.about {
+  padding-top: 10vh;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ce4b2a;
+  color: #f5f5f7;
+}
+h2 {
+  padding-top: 4vh;
+  flex:1 1 0;
+  font-size: 2rem;
+  font-weight: 100;
+}
+p {
+  letter-spacing: 1.2vw;
+  flex: 3 1;
+  text-align: center;
+  padding: 0 10vw;
+  text-align-last: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+span {
+  color: #f5f5f7;
+  flex: 1 1 0;
+}
+
+.about >span> a {
+  color: #f5f5f7;
+  text-decoration: none;
+  letter-spacing: 1.2vw;
+}
+
+a:hover, a:active {
+  color: #1d1d1f;
+  text-decoration: line-through 2px #ce4b2a;
+}
