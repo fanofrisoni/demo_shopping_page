@@ -48,7 +48,7 @@ a:hover, a:active {
   color: #1d1d1f;
   text-decoration: line-through 2px #ce4b2a;
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .about {
     padding-top: 5vh;
   }
